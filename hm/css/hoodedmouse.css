@@ -1,0 +1,1773 @@
+/*HOME*/
+:root {
+    font-size: 1rem;
+    line-height: 2;
+    font-family: dosis;
+    --color-primary: #2bc8c2;
+    --color-primary-2: #12afa9;
+    --color-primary-3: #00958f;
+    --color-primary-light: #5efbf5;
+    --color-primary-dark: #007c76;
+    --color-white: #ffffff;
+    --color-light: #d1d1d1;
+    --color-light-2: #e6e6e6;
+    --color-light-3: #cccccc;
+    --color-black: #000000;
+    --color-black-2: #1e1e1e;
+    --color-dark: #444444;
+    --color-dark-2: #666666;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: auto;
+    width: 100%;
+	font-family: dosis;
+    line-height: 1.75em;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #d6d7da;
+    font-family: dosis;
+	}
+	
+a:hover {
+	text-decoration: none;
+	}
+
+:focus {
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, .nav__title, .text__hm--body {
+    font-family: dosis;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+h2 {
+    color: var(--color-light-3);
+}
+
+h3 {
+	color: var(--color-black-2);
+}
+
+h4 {
+	color: var(--color-primary-dark);
+    font-weight: 500;
+}
+
+h5 {
+	color: var(--color-dark);
+}
+
+h6 {
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.header--light {
+    color: var(--color-primary)
+}
+
+.text__hm--body {
+    color: var(--color-black-2);
+}
+
+label {
+	text-align: left; 
+	font-family: Economica; 
+	font-size: 1.5rem; 
+	color: #333333;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-dark);
+    box-sizing: border-box;
+}
+
+.nav__menu--item {
+    font-family: Economica;
+	color: var(--color-dark-2);
+    list-style: none !important;
+}
+
+.nav__menu--item:hover {
+    cursor: pointer;
+}
+
+.button__hm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-dark);
+    border: none;
+    color: var(--color-white);
+}
+
+#icon--resume, #icon--portfolio, #icon--contact {
+    fill: none;
+    stroke: var(--color-white);
+    stroke-width: .25px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.icon--default {
+    stroke: var(--color-white) !important;
+}
+
+.nav__title--default {
+    stroke: var(--color-white) !important;
+}
+
+.icon--hover {
+    stroke: var(--color-primary-light) !important;
+    cursor: pointer;
+}
+
+.icon--active {
+    stroke: var(--color-primary) !important;
+}
+
+.nav__title--hover {
+    color: var(--color-primary-light);
+    cursor: pointer;
+}
+
+.nav__title--active {
+    color: var(--color-primary);
+}
+
+.main {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.paragraph__hm {
+    margin-bottom: 1rem;
+}
+
+.paragraph__hm:last-of-type {
+    margin-bottom: 0;
+}
+
+#profile:hover {
+    cursor: pointer;
+    scale: 101%;
+}
+
+.btn__portfolio--menuItem:hover {
+    scale: 105%;
+    cursor: pointer;
+}
+
+.btn__portfolio--menuItem:focus {
+    outline: none;
+}
+
+.btn__portfolio--menuItem:active {
+    outline: none;
+}
+
+.item__content--header {
+    font-weight: 300;
+}
+
+.decoration__btn--active {
+    height: 4px;
+    width: 20%;
+    background-color: var(--color-primary-dark);
+    border-radius: 10rem;
+    margin: 0 auto;
+}
+
+.img__responsive--hm {
+    border-radius: 1000px;
+}
+
+.text__hm--summary {
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--color-black-2);
+}
+
+.text__caseStudy--role {
+    color: var(--color-primary-dark);
+}
+
+.text__caseStudy--header {
+    color: var(--color-black-2);
+    font-weight: 600;
+}
+
+.img__responsive--menu {
+    width: 100%;
+}
+
+.img__responsive--caseStudy {
+    width: 100%;
+}
+
+.text__caseStudy--processStage {
+    color: var(--color-primary-dark);
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin: 1.25rem 0 .5rem 0;
+}
+
+.list__item--hm {
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.list__item--hm:last-of-type {
+    margin-bottom: 0;
+}
+
+.list__item--bullet {
+    margin-right: .5rem;
+}
+
+.list__item--education {
+    display: flex;
+}
+
+.title__education {
+    color: var(--color-primary-dark);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container__footer--content {
+    background-color: var(--color-dark);
+    display: flex;
+    justify-content: center;
+    padding: .25rem 0;
+}
+
+.container__hm {
+    box-sizing: border-box;
+}
+
+.container__hm--logo {
+    box-sizing: border-box;
+}
+
+#hmlogo--robinEgg:hover {
+    cursor: pointer;
+}
+
+#hmlogo--robinEgg:hover {
+    scale: 105%;
+}
+
+.p__footer {
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+.xpWfed {
+    display: none !important;
+}
+
+#img__afeHome--mobile {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.paragraph__list--intro {
+    margin-bottom: .5rem;
+}
+
+.paragraph__hm--topMargin {
+    margin-top: 1rem;
+}
+
+.caseStudy__album--imgFirst {
+    margin-top: 1rem !important;
+}
+
+@media (max-width: 599px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+    }
+
+    .header {
+        width: 100%;
+        max-width: 100vw;
+        padding: 1rem;
+    }
+
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 382px;
+        margin: auto;
+    }
+
+    .profile {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .nav {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        align-content: center;
+        margin: auto 0;
+    }
+
+    .nav__menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav__menu--item {
+        margin: 0;
+        width: 33.33%;
+    }
+    .icon__nav {
+        width: 70%;
+    }
+
+    .nav__title {
+        font-size: 1.25rem;
+        margin-top: .5rem;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .main__content {
+        padding: 1.5rem 1rem;
+    }
+
+    .container__intro {
+        width: 100%;
+        max-width: 382px;
+        margin: auto;
+        margin-bottom: 12.5rem;
+    }
+
+    .container__intro--content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__intro--img {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .img__responsive--hm {
+        width: 80%;
+        margin: auto;
+    }
+
+    .container__intro--summary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text__hm--summary {
+        font-size: 1.25rem;
+    }
+
+    .text__hm--body {
+        font-size: 1.25rem;
+    }
+
+    .container__profile {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 12.5rem;
+    }
+
+    .container__portfolio--menu {
+        display: flex;
+        overflow-x: scroll;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn__portfolio--menuItem {
+        width: 88.88%;
+        min-width: 15rem;
+        margin-right: 1rem;
+    }
+
+    .btn__portfolio--menuItem:hover {
+        scale: none;
+    }
+
+    .btn__portfolio--menuItem:last-of-type {
+        margin-right: 0;
+    }
+
+    .menu__item--content {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: .5rem;
+        text-align: center;
+    }
+
+    .item__content--header {
+        margin: 0 auto;
+    }
+
+    .item__content--subheader {
+        margin-top: .25rem;
+        font-size: 1.25rem;
+        margin: 0 auto;
+    }
+
+    .decoration__btn--active {
+        width: 25%;
+    }
+
+    .container__caseStudy {
+        margin-bottom: 2rem;
+    }
+
+    #caseStudy--2 {
+        margin-bottom: 0;
+    }
+
+    .text__caseStudy--role {
+        margin: .5rem 0 1.25rem 0;
+    }
+
+    .container__caseStudy--section {
+        margin-bottom: 1.25rem;
+    }
+
+    .text__caseStudy--header {
+        font-size: 1.25rem;
+        margin-bottom: .5rem;
+    }
+
+    .container__caseStudy--album {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .album__img--header {
+        margin-bottom: .5rem;
+        font-weight: 500;
+        color: var(--color-primary-dark);
+    }
+
+    .caseStudy__album--img {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .caseStudy__album--img:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .text__caseStudy--processStage {
+        color: var(--color-primary-dark);
+        font-weight: 300;
+        font-size: 1.25rem;
+        margin: 1.25rem 0 .5rem 0;
+    }
+
+    .header__professional {
+        margin-bottom: .5rem;
+    }
+
+    .container__workHistory--professional {
+        width: 100%;
+    }
+
+    .container__work {
+        margin-bottom: 2rem;
+    }
+
+    .work__details--description {
+        margin: .5rem 0;
+    }
+
+    .container__work--achievements {
+        margin-top: 1rem;
+    }
+
+    #education__details--1 {
+        margin-bottom: 1rem;
+    }
+
+    .container__resume--education {
+        margin-bottom: 2rem;
+    }
+
+    .container__resume--skills {
+        margin-bottom: 2rem;
+    }
+
+    .container__resume--tools {
+        margin-bottom: 1.5rem;
+    }
+
+    .container__profile--contact {
+        width: 100%;
+        max-height: 984px;
+    }
+
+    .form__hm--contact {
+        width: 100%;
+        max-width: 100%;
+        height: 1024px;
+        max-height: 1024px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__footer--content {
+        padding: .25rem;
+    }
+
+    .p__footer {
+        font-size: .75rem;
+    }
+
+    .container__hm {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .container__hm--logo {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        padding-right: 1rem;
+    }
+
+    #hmlogo--robinEgg {
+        width: 6rem;
+        height: auto;
+    }
+
+    #img__afeHome--mobile {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+@media (min-width: 600px) and (max-width: 904px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+    }
+
+    .header {
+        width: 100%;
+        max-width: 100vw;
+        padding: 1rem 1.5rem;
+    }
+
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 382px;
+        margin: auto;
+    }
+
+    .profile {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .nav {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        align-content: center;
+        margin: auto 0;
+    }
+
+    .nav__menu {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .nav__menu--item {
+        margin: 0;
+        width: 33.33%;
+    }
+    .icon__nav {
+        width: 70%;
+    }
+
+    .nav__title {
+        font-size: 1.25rem;
+        margin-top: .5rem;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .main__content {
+        padding: 2rem 1.5rem;
+    }
+
+    .container__intro {
+        width: 100%;
+        margin: auto;
+    }
+
+    .container__intro--content {
+        width: 100%;
+        max-width: 640px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .container__intro--img {
+        width: 33.33%;
+        max-width: 288px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .img__responsive--hm {
+        width: 100%;
+        margin: auto;
+    }
+
+    .container__intro--summary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text__hm--summary {
+        font-size: 1.25rem;
+    }
+
+    .text__hm--body {
+        font-size: 1.25rem;
+    }
+
+    .container__profile {
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+        margin-bottom: 15rem;
+    }
+
+    .container__portfolio--menu {
+        display: flex;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn__portfolio--menuItem {
+        width: 33.33%;
+        margin-right: 1rem;
+    }
+
+    .btn__portfolio--menuItem:hover {
+        scale: none;
+    }
+
+    .btn__portfolio--menuItem:last-of-type {
+        margin-right: 0;
+    }
+
+    .menu__item--content {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: .5rem;
+        text-align: center;
+    }
+
+    .item__content--header {
+        margin: 0 auto .5rem;
+    }
+
+    .item__content--subheader {
+        margin-top: .25rem;
+        font-size: 1.25rem;
+        margin: 0 auto;
+    }
+
+    .decoration__btn--active {
+        width: 25%;
+    }
+
+    .container__caseStudy {
+        margin-bottom: 2rem;
+    }
+
+    #caseStudy--2 {
+        margin-bottom: 0;
+    }
+
+    .text__caseStudy--role {
+        margin: .5rem 0 1.25rem 0;
+    }
+
+    .container__caseStudy--section {
+        margin-bottom: 1.25rem;
+    }
+
+    .text__caseStudy--header {
+        font-size: 1.25rem;
+        margin-bottom: .5rem;
+    }
+
+    .container__caseStudy--album {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .album__img--header {
+        margin-bottom: .5rem;
+        font-weight: 500;
+        color: var(--color-primary-dark);
+    }
+
+    .caseStudy__album--img {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .caseStudy__album--img:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .header__professional {
+        margin-bottom: .5rem;
+    }
+
+    .container__workHistory--professional {
+        width: 100%;
+    }
+
+    .container__work {
+        margin-bottom: 2rem;
+    }
+
+    .work__details--description {
+        margin: .5rem 0;
+    }
+
+    .container__work--achievements {
+        margin-top: 1rem;
+    }
+
+    #education__details--1 {
+        margin-bottom: 1rem;
+    }
+
+    .container__resume--education {
+        margin-bottom: 2rem;
+    }
+
+    .container__resume--skills {
+        margin-bottom: 2rem;
+    }
+
+    .container__profile--contact {
+        width: 100%;
+        max-height: 984px;
+    }
+
+    .form__hm--contact {
+        width: 100%;
+        max-width: 100%;
+        height: 984px;
+        max-height: 984px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__hm {
+        width: 720px;
+        margin: auto;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .container__hm--logo {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    #hmlogo--robinEgg {
+        width: 7rem;
+        height: auto;
+    }
+
+}
+
+
+
+@media (min-width: 905px) and (max-width: 1439px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header__content {
+        width: 864px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding: 1rem 0;
+    }
+
+    .profile {
+        width: 50%;
+        height: auto;
+        text-align: left;
+    }
+
+    .nav {
+        width: 50%;
+        height: auto;
+        margin: auto 0;
+        display: flex;
+    }
+
+    .nav__menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 304px;
+        margin-left: auto;
+    }
+
+    .nav__menu--item {
+        margin: 0;
+        width: 33.33%;
+        margin-left: 1.25rem;
+    }
+    .icon__nav {
+        width: 100%;
+    }
+
+    .nav__title {
+        font-size: 1.25rem;
+        margin-top: .5rem;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .main__content {
+        padding: 2rem 0;
+    }
+
+    .container__intro {
+        width: 100%;
+        margin: auto;
+    }
+
+    .container__intro--content {
+        width: 100%;
+        max-width: 640px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+
+    .container__intro--img {
+        width: 40%;
+        max-width: 288px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .img__responsive--hm {
+        width: 100%;
+        margin: auto;
+    }
+
+    .container__intro--summary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text__hm--summary {
+        font-size: 1.25rem;
+    }
+
+    .text__hm--body {
+        font-size: 1.25rem;
+    }
+
+    .container__profile {
+        width: 864px;
+        margin: 0 auto;
+        margin-bottom: 15rem;
+    }
+
+    .container__portfolio--menu {
+        display: flex;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn__portfolio--menuItem {
+        width: 33.33%;
+        margin-right: 1rem;
+    }
+
+    .btn__portfolio--menuItem:hover {
+        scale: none;
+    }
+
+    .btn__portfolio--menuItem:last-of-type {
+        margin-right: 0;
+    }
+
+    .menu__item--content {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: .5rem;
+        text-align: center;
+    }
+
+    .item__content--header {
+        margin: 0 auto .5rem;
+    }
+
+    .item__content--subheader {
+        margin-top: .25rem;
+        font-size: 1.25rem;
+        margin: 0 auto;
+    }
+
+    .decoration__btn--active {
+        width: 25%;
+    }
+
+    .container__caseStudy {
+        margin-bottom: 2rem;
+    }
+
+    #caseStudy--2 {
+        margin-bottom: 0;
+    }
+
+    .text__caseStudy--role {
+        margin: .5rem 0 1.25rem 0;
+    }
+
+    .container__caseStudy--section {
+        margin-bottom: 1.25rem;
+    }
+
+    .text__caseStudy--header {
+        font-size: 1.25rem;
+        margin-bottom: .5rem;
+    }
+
+    .container__caseStudy--album {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .album__img--header {
+        margin-bottom: .5rem;
+        font-weight: 500;
+        color: var(--color-primary-dark);
+    }
+
+    .caseStudy__album--img {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .caseStudy__album--img:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .header__professional {
+        margin-bottom: .5rem;
+    }
+
+    .container__workHistory--professional {
+        width: 100%;
+    }
+
+    .container__work {
+        margin-bottom: 2rem;
+    }
+
+    .work__details--description {
+        margin: .5rem 0;
+    }
+
+    .container__work--achievements {
+        margin-top: 1rem;
+    }
+
+    #education__details--1 {
+        margin-bottom: 1rem;
+    }
+
+    .container__resume--education {
+        margin-bottom: 2rem;
+    }
+
+    .container__resume--skills {
+        margin-bottom: 2rem;
+    }
+
+    .container__resume--tools {
+        margin-bottom: 3rem;
+    }
+
+    .container__profile--contact {
+        width: 100%;
+        margin-bottom: 3rem;
+        max-height: 984px;
+    }
+
+    .form__hm--contact {
+        width: 100%;
+        max-width: 100%;
+        height: 984px;
+        max-height: 984px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__hm {
+        width: 864px;
+        margin: auto;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .container__hm--logo {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    #hmlogo--robinEgg {
+        width: 7rem;
+        height: auto;
+    }
+
+}
+
+
+/*
+@media (min-width: 1240px) and (max-width: 1439px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+    }
+
+    .header {
+        width: 100%;
+        max-width: 100vw;
+        padding: 1rem 6rem;
+    }
+
+    .header__content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .profile {
+        width: 50%;
+        height: auto;
+        text-align: left;
+    }
+
+    .nav {
+        width: 50%;
+        height: auto;
+        margin: auto 0;
+        display: flex;
+    }
+
+    .nav__menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 328px;
+        margin-left: auto;
+    }
+
+    .nav__menu--item {
+        margin: 0;
+        width: 33.33%;
+        margin-left: 1.5rem;
+    }
+    .icon__nav {
+        width: 100%;
+    }
+
+    .nav__title {
+        font-size: 1.25rem;
+        margin-top: .5rem;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .main__content {
+        padding: 2rem 0;
+    }
+
+    .container__intro {
+        width: 50%;
+        margin: auto;
+        margin-top: 3.5rem;
+    }
+
+    .container__intro--content {
+        width: 100%;
+        max-width: 612px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .container__intro--img {
+        width: 40%;
+        max-width: 288px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .img__responsive--hm {
+        width: 100%;
+        margin: auto;
+    }
+
+    .container__intro--summary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text__hm--summary {
+        font-size: 1.25rem;
+    }
+
+    .container__profile {
+        width: 50%;
+        max-width: 612px;
+        margin: 0 auto;
+    }
+
+    .text__hm--body {
+        font-size: 1.25rem;
+    }
+
+    .container__caseStudy {
+        margin-bottom: 2rem;
+    }
+
+    #caseStudy--2 {
+        margin-bottom: 0;
+    }
+
+    .text__caseStudy--role {
+        margin: .5rem 0 1.25rem 0;
+    }
+
+    .container__caseStudy--section {
+        margin-bottom: 1.25rem;
+    }
+
+    .text__caseStudy--header {
+        font-size: 1.25rem;
+        margin-bottom: .5rem;
+    }
+
+    .header__professional {
+        margin-bottom: .5rem;
+    }
+
+    .container__workHistory--professional {
+        width: 100%;
+    }
+
+    .container__work {
+        margin-bottom: 2rem;
+    }
+
+    .work__details--description {
+        margin: .5rem 0;
+    }
+
+    .container__work--achievements {
+        margin-top: 1rem;
+    }
+
+    #education__details--1 {
+        margin-bottom: 1rem;
+    }
+
+    .container__resume--education {
+        margin-bottom: 2rem;
+    }
+
+    .container__resume--skills {
+        margin-bottom: 2rem;
+    }
+
+    .container__resume--tools {
+        margin-bottom: 12rem;
+    }
+
+    .container__profile--contact {
+        width: 100%;
+        margin-bottom: 12rem;
+        max-height: 984px;
+    }
+
+    .form__hm--contact {
+        width: 100%;
+        max-width: 100%;
+        height: 984px;
+        max-height: 984px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__hm {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .container__hm--logo {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        padding-right: 6rem;
+    }
+
+    #hmlogo--robinEgg {
+        width: 7rem;
+        height: auto;
+    }
+
+}
+*/
+
+
+@media (min-width: 1440px) {
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+    }
+
+    .text__hm--body {
+        font-size: 1.25rem;
+    }
+
+    .header {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .header__content {
+        width: 100%;
+        max-width: 1152px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .profile {
+        width: 50%;
+        height: auto;
+        text-align: left;
+    }
+
+    .nav {
+        width: 50%;
+        height: auto;
+        margin: auto 0;
+        display: flex;
+    }
+
+    .nav__menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 432px;
+        margin-left: auto;
+    }
+
+    .nav__menu--item {
+        margin: 0;
+        width: 33.33%;
+        margin-left: 1.5rem;
+    }
+
+    .icon__nav {
+        width: 100%;
+    }
+
+    .nav__title {
+        font-size: 1.25rem;
+        margin-top: .5rem;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .main__content {
+        padding: 2.5rem 0 0;
+    }
+
+    .container__intro {
+        width: 100%;
+        margin: auto;
+        margin-top: 5rem;
+    }
+
+    .container__intro--content {
+        width: 648px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .container__intro--img {
+        width: 40%;
+        max-width: 288px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .img__responsive--hm {
+        width: 100%;
+        margin: auto;
+    }
+
+    .container__intro--summary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text__hm--summary {
+        font-size: 1.25rem;
+    }
+
+    .container__profile {
+        margin: 0 auto;
+        width: 1152px;
+    }
+
+    .container__portfolio--project {
+        width: 864px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .text__hm--body {
+        font-size: 1.25rem;
+    }
+
+    .container__caseStudy {
+        margin-bottom: 17rem;
+    }
+
+    .text__caseStudy--role {
+        margin: .5rem 0 1.25rem 0;
+    }
+
+    .container__caseStudy--section {
+        margin-bottom: 1.25rem;
+    }
+
+    .container__caseStudy--section:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .text__caseStudy--header {
+        font-size: 1.25rem;
+        margin-bottom: .5rem;
+    }
+
+    .container__profile--resume {
+        width: 864px;
+        margin: 0 auto;
+        padding-bottom: 17.5rem;
+    }
+
+    .header__professional {
+        margin-bottom: .5rem;
+    }
+
+    .container__workHistory--professional {
+        width: 100%;
+    }
+
+    .container__work {
+        margin-bottom: 2rem;
+    }
+
+    .work__details--description {
+        margin: .5rem 0;
+    }
+
+    .container__work--achievements {
+        margin-top: 1rem;
+    }
+
+    #education__details--1 {
+        margin-bottom: 1rem;
+    }
+
+    .container__resume--education {
+        margin-bottom: 2rem;
+    }
+
+    .container__resume--skills {
+        margin-bottom: 2rem;
+    }
+
+    .container__resume--tools {
+        margin-bottom: 0;
+    }
+
+    .container__profile--contact {
+        width: 100%;
+        padding-bottom: 15.5rem;
+        max-height: 984px;
+    }
+
+    .form__hm--contact {
+        width: 100%;
+        max-width: 100%;
+        height: 984px;
+        max-height: 984px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__hm {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .container__hm--logo {
+        width: 1152px;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    #hmlogo--robinEgg {
+        width: 8rem;
+        height: auto;
+    }
+
+    .container__portfolio--menu {
+        width: 100%;
+        display: flex;
+        margin-bottom: 3rem;
+    }
+
+    .btn__portfolio--menuItem {
+        width: 33.33%;
+        margin-right: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn__portfolio--menuItem:last-of-type {
+        margin-right: 0;
+    }
+
+    .menu__item--content {
+        padding: 1rem;
+        padding-bottom: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item__content--subheader {
+        margin-top: .25rem;
+        font-size: 1.25rem;
+    }
+
+    .container__caseStudy--album {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .album__img--header {
+        margin-bottom: .5rem;
+        font-weight: 500;
+        color: var(--color-primary-dark);
+    }
+
+    .caseStudy__album--img {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .caseStudy__album--img:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .text__caseStudy--processStage {
+        color: var(--color-primary-dark);
+        font-weight: 300;
+        font-size: 1.25rem;
+        margin-bottom: .5rem;
+    }
+
+    .list__processStage {
+        margin: .5rem 0;
+    }
+
+    .list__processStage--item {
+        display: flex;
+    }
+
+    .processStage__item--bullet {
+        margin-right: .5rem;
+    }
+
+}
+
+
+
+.hidden {
+    display: none;
+}
